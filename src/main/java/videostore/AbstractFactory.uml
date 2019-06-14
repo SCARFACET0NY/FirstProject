@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="590.0265804597701" y="670.0">videostore.Client</node>
+    <node x="482.8390804597701" y="121.0">videostore.UkrainianSubtitles</node>
+    <node x="281.0265804597701" y="121.0">videostore.EnglishSubtitles</node>
+    <node x="371.5265804597701" y="302.0">videostore.RussianFilmFactory</node>
+    <node x="23.776580459770116" y="121.0">videostore.RussianSubtitles</node>
+    <node x="692.8390804597701" y="121.0">videostore.RussianSoundtrack</node>
+    <node x="793.5265804597701" y="302.0">videostore.UkrainianFilmFactory</node>
+    <node x="540.5265804597701" y="447.0">videostore.FilmFactory</node>
+    <node x="964.7765804597701" y="121.0">videostore.EnglishSoundtrack</node>
+    <node x="144.52658045977012" y="0.0">videostore.Subtitles</node>
+    <node x="1041.7765804597702" y="0.0">videostore.Soundtrack</node>
+    <node x="582.5265804597701" y="302.0">videostore.EnglishFilmFactory</node>
+    <node x="1167.7765804597702" y="121.0">videostore.UkrainianSoundtrack</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="videostore.RussianFilmFactory" target="videostore.FilmFactory">
+      <point x="47.75" y="37.5" />
+      <point x="514.7765804597701" y="407.0" />
+      <point x="626.4640804597701" y="407.0" />
+      <point x="-51.5625" y="-86.5" />
+    </edge>
+    <edge source="videostore.Client" target="videostore.Subtitles">
+      <point x="-58.66666666666663" y="-25.5" />
+      <point x="619.3599137931035" y="645.0" />
+      <point x="0.0" y="645.0" />
+      <point x="0.0" y="81.0" />
+      <point x="153.21408045977012" y="81.0" />
+      <point x="-60.8125" y="25.5" />
+    </edge>
+    <edge source="videostore.UkrainianSubtitles" target="videostore.Subtitles">
+      <point x="0.0" y="-25.5" />
+      <point x="577.8390804597701" y="81.0" />
+      <point x="274.8390804597701" y="81.0" />
+      <point x="60.8125" y="25.5" />
+    </edge>
+    <edge source="videostore.UkrainianSoundtrack" target="videostore.Soundtrack">
+      <point x="1.1368683772161603E-13" y="-25.5" />
+      <point x="1266.7765804597702" y="91.0" />
+      <point x="1131.1515804597702" y="91.0" />
+      <point x="24.375" y="25.5" />
+    </edge>
+    <edge source="videostore.FilmFactory" target="videostore.EnglishFilmFactory">
+      <point x="-17.1875" y="-86.5" />
+      <point x="660.8390804597701" y="397.0" />
+      <point x="630.2765804597701" y="397.0" />
+      <point x="-47.75" y="37.5" />
+    </edge>
+    <edge source="videostore.EnglishFilmFactory" target="videostore.EnglishSubtitles">
+      <point x="-23.875" y="-37.5" />
+      <point x="654.1515804597701" y="212.0" />
+      <point x="368.0265804597701" y="212.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="videostore.RussianFilmFactory" target="videostore.RussianSubtitles">
+      <point x="-71.625" y="-37.5" />
+      <point x="395.4015804597701" y="282.0" />
+      <point x="110.77658045977012" y="282.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="videostore.UkrainianFilmFactory" target="videostore.UkrainianSubtitles">
+      <point x="-25.75" y="-37.5" />
+      <point x="870.7765804597701" y="192.0" />
+      <point x="577.8390804597701" y="192.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="videostore.EnglishFilmFactory" target="videostore.EnglishSoundtrack">
+      <point x="71.625" y="-37.5" />
+      <point x="749.6515804597701" y="262.0" />
+      <point x="1055.7765804597702" y="262.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="videostore.EnglishFilmFactory" target="videostore.FilmFactory">
+      <point x="47.75" y="37.5" />
+      <point x="725.7765804597701" y="397.0" />
+      <point x="695.2140804597701" y="397.0" />
+      <point x="17.1875" y="-86.5" />
+    </edge>
+    <edge source="videostore.FilmFactory" target="videostore.UkrainianFilmFactory">
+      <point x="51.5625" y="-86.5" />
+      <point x="729.5890804597701" y="407.0" />
+      <point x="845.0265804597701" y="407.0" />
+      <point x="-51.5" y="37.5" />
+    </edge>
+    <edge source="videostore.FilmFactory" target="videostore.Soundtrack">
+      <point x="120.3125" y="-86.5" />
+      <point x="798.3390804597701" y="427.0" />
+      <point x="1376.2765804597702" y="427.0" />
+      <point x="1376.2765804597702" y="81.0" />
+      <point x="1147.4015804597702" y="81.0" />
+      <point x="40.625" y="25.5" />
+    </edge>
+    <edge source="videostore.Client" target="videostore.Soundtrack">
+      <point x="58.66666666666663" y="-25.5" />
+      <point x="736.6932471264367" y="645.0" />
+      <point x="1387.6781609195402" y="645.0" />
+      <point x="1387.6781609195402" y="71.0" />
+      <point x="1163.6515804597702" y="71.0" />
+      <point x="56.875" y="25.5" />
+    </edge>
+    <edge source="videostore.RussianFilmFactory" target="videostore.Soundtrack">
+      <point x="71.625" y="-37.5" />
+      <point x="538.6515804597701" y="242.0" />
+      <point x="934.5890804597701" y="242.0" />
+      <point x="934.5890804597701" y="81.0" />
+      <point x="1066.1515804597702" y="81.0" />
+      <point x="-40.625" y="25.5" />
+    </edge>
+    <edge source="videostore.FilmFactory" target="videostore.RussianFilmFactory">
+      <point x="-85.9375" y="-86.5" />
+      <point x="592.0890804597701" y="417.0" />
+      <point x="419.2765804597701" y="417.0" />
+      <point x="-47.75" y="37.5" />
+    </edge>
+    <edge source="videostore.UkrainianFilmFactory" target="videostore.Soundtrack">
+      <point x="25.75" y="-37.5" />
+      <point x="922.2765804597701" y="272.0" />
+      <point x="1157.2765804597702" y="272.0" />
+      <point x="1157.2765804597702" y="101.0" />
+      <point x="1114.9015804597702" y="101.0" />
+      <point x="8.125" y="25.5" />
+    </edge>
+    <edge source="videostore.RussianFilmFactory" target="videostore.RussianSoundtrack">
+      <point x="23.875" y="-37.5" />
+      <point x="490.9015804597701" y="232.0" />
+      <point x="783.8390804597701" y="232.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="videostore.FilmFactory" target="videostore.Subtitles">
+      <point x="-120.3125" y="-86.5" />
+      <point x="557.7140804597701" y="427.0" />
+      <point x="13.276580459770116" y="427.0" />
+      <point x="13.276580459770116" y="91.0" />
+      <point x="170.58908045977012" y="91.0" />
+      <point x="-43.4375" y="25.5" />
+    </edge>
+    <edge source="videostore.EnglishFilmFactory" target="videostore.Soundtrack">
+      <point x="23.875" y="-37.5" />
+      <point x="701.9015804597701" y="252.0" />
+      <point x="945.5890804597701" y="252.0" />
+      <point x="945.5890804597701" y="91.0" />
+      <point x="1082.4015804597702" y="91.0" />
+      <point x="-24.375" y="25.5" />
+    </edge>
+    <edge source="videostore.UkrainianFilmFactory" target="videostore.Subtitles">
+      <point x="-77.25" y="-37.5" />
+      <point x="819.2765804597701" y="202.0" />
+      <point x="465.5265804597701" y="202.0" />
+      <point x="465.5265804597701" y="91.0" />
+      <point x="257.4640804597701" y="91.0" />
+      <point x="43.4375" y="25.5" />
+    </edge>
+    <edge source="videostore.EnglishSoundtrack" target="videostore.Soundtrack">
+      <point x="0.0" y="-25.5" />
+      <point x="1055.7765804597702" y="101.0" />
+      <point x="1098.6515804597702" y="101.0" />
+      <point x="-8.125" y="25.5" />
+    </edge>
+    <edge source="videostore.EnglishFilmFactory" target="videostore.Subtitles">
+      <point x="-71.625" y="-37.5" />
+      <point x="606.4015804597701" y="222.0" />
+      <point x="219.27658045977012" y="222.0" />
+      <point x="219.27658045977012" y="101.0" />
+      <point x="222.71408045977012" y="101.0" />
+      <point x="8.6875" y="25.5" />
+    </edge>
+    <edge source="videostore.UkrainianFilmFactory" target="videostore.FilmFactory">
+      <point x="51.5" y="37.5" />
+      <point x="948.0265804597701" y="417.0" />
+      <point x="763.9640804597701" y="417.0" />
+      <point x="85.9375" y="-86.5" />
+    </edge>
+    <edge source="videostore.Client" target="videostore.FilmFactory">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="86.5" />
+    </edge>
+    <edge source="videostore.RussianSubtitles" target="videostore.Subtitles">
+      <point x="0.0" y="-25.5" />
+      <point x="110.77658045977012" y="101.0" />
+      <point x="187.96408045977012" y="101.0" />
+      <point x="-26.0625" y="25.5" />
+    </edge>
+    <edge source="videostore.RussianFilmFactory" target="videostore.Subtitles">
+      <point x="-23.875" y="-37.5" />
+      <point x="443.1515804597701" y="272.0" />
+      <point x="208.27658045977012" y="272.0" />
+      <point x="208.27658045977012" y="101.0" />
+      <point x="205.33908045977012" y="101.0" />
+      <point x="-8.6875" y="25.5" />
+    </edge>
+    <edge source="videostore.UkrainianFilmFactory" target="videostore.UkrainianSoundtrack">
+      <point x="77.25" y="-37.5" />
+      <point x="973.7765804597701" y="282.0" />
+      <point x="1266.7765804597702" y="282.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="videostore.RussianSoundtrack" target="videostore.Soundtrack">
+      <point x="0.0" y="-25.5" />
+      <point x="783.8390804597701" y="71.0" />
+      <point x="1049.9015804597702" y="71.0" />
+      <point x="-56.875" y="25.5" />
+    </edge>
+    <edge source="videostore.EnglishSubtitles" target="videostore.Subtitles">
+      <point x="0.0" y="-25.5" />
+      <point x="368.0265804597701" y="101.0" />
+      <point x="240.08908045977012" y="101.0" />
+      <point x="26.0625" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="587.0" y="240.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
