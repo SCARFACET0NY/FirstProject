@@ -1,6 +1,6 @@
 package videostore;
 
-public class EnglishFilmFactory extends FilmFactory {
+public class EnglishMovie extends MovieFactory {
     @Override
     public Soundtrack getSoundtrack() {
         return new EnglishSoundtrack();

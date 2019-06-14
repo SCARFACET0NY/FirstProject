@@ -2,16 +2,16 @@ package videostore;
 
 public class Client {
     public static void main(String[] args) {
-        FilmFactory filmFactory = FilmFactory.getFactory("english");
-        Soundtrack soundtrack = filmFactory.getSoundtrack();
-        Subtitles subtitles = filmFactory.getSubtitles();
+        MovieFactory film = MovieFactory.getMovie("english");
+        Soundtrack soundtrack = film.getSoundtrack();
+        Subtitles subtitles = film.getSubtitles();
 
         System.out.println(soundtrack.play());
         System.out.println(subtitles.show());
 
-        filmFactory = FilmFactory.getFactory("russian");
-        soundtrack = filmFactory.getSoundtrack();
-        subtitles = filmFactory.getSubtitles();
+        film = MovieFactory.getMovie("russian");
+        soundtrack = film.getSoundtrack();
+        subtitles = film.getSubtitles();
 
         System.out.println(soundtrack.play());
         System.out.println(subtitles.show());
