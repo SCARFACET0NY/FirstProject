@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="568.0" y="121.0">tetris.LFigure</node>
+    <node x="380.0" y="121.0">tetris.SFigure</node>
+    <node x="940.0" y="121.0">tetris.JFigure</node>
+    <node x="0.0" y="121.0">tetris.OFigure</node>
+    <node x="192.0" y="121.0">tetris.TFigure</node>
+    <node x="597.0" y="292.0">tetris.FigureFactory</node>
+    <node x="690.3863636363636" y="0.0">tetris.Figure</node>
+    <node x="756.0" y="121.0">tetris.IFigure</node>
+    <node x="657.0" y="393.0">tetris.TetrisClient</node>
+    <node x="1128.0" y="121.0">tetris.ZFigure</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tetris.FigureFactory" target="tetris.TFigure">
+      <point x="-92.5" y="-25.5" />
+      <point x="652.5" y="262.0" />
+      <point x="276.0" y="262.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.Figure">
+      <point x="129.5" y="-25.5" />
+      <point x="874.5" y="272.0" />
+      <point x="1307.5" y="272.0" />
+      <point x="1307.5" y="71.0" />
+      <point x="801.0113636363636" y="71.0" />
+      <point x="51.625" y="25.5" />
+    </edge>
+    <edge source="tetris.IFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="838.0" y="101.0" />
+      <point x="756.7613636363636" y="101.0" />
+      <point x="7.375" y="25.5" />
+    </edge>
+    <edge source="tetris.JFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="1024.0" y="91.0" />
+      <point x="771.5113636363636" y="91.0" />
+      <point x="22.125" y="25.5" />
+    </edge>
+    <edge source="tetris.TFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="276.0" y="81.0" />
+      <point x="712.5113636363636" y="81.0" />
+      <point x="-36.875" y="25.5" />
+    </edge>
+    <edge source="tetris.SFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="464.0" y="91.0" />
+      <point x="727.2613636363636" y="91.0" />
+      <point x="-22.125" y="25.5" />
+    </edge>
+    <edge source="tetris.ZFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="1212.5" y="81.0" />
+      <point x="786.2613636363636" y="81.0" />
+      <point x="36.875" y="25.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.IFigure">
+      <point x="18.5" y="-25.5" />
+      <point x="763.5" y="242.0" />
+      <point x="838.0" y="242.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.ZFigure">
+      <point x="92.5" y="-25.5" />
+      <point x="837.5" y="262.0" />
+      <point x="1212.5" y="262.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="tetris.TetrisClient" target="tetris.FigureFactory">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="tetris.OFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="86.0" y="71.0" />
+      <point x="697.7613636363636" y="71.0" />
+      <point x="-51.625" y="25.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.LFigure">
+      <point x="-18.5" y="-25.5" />
+      <point x="726.5" y="242.0" />
+      <point x="652.0" y="242.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="tetris.LFigure" target="tetris.Figure">
+      <point x="0.0" y="-50.5" />
+      <point x="652.0" y="101.0" />
+      <point x="742.0113636363636" y="101.0" />
+      <point x="-7.375" y="25.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.JFigure">
+      <point x="55.5" y="-25.5" />
+      <point x="800.5" y="252.0" />
+      <point x="1024.0" y="252.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.SFigure">
+      <point x="-55.5" y="-25.5" />
+      <point x="689.5" y="252.0" />
+      <point x="464.0" y="252.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="tetris.FigureFactory" target="tetris.OFigure">
+      <point x="-129.5" y="-25.5" />
+      <point x="615.5" y="272.0" />
+      <point x="86.0" y="272.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="741.5" y="206.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
