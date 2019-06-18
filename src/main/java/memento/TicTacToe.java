@@ -1,5 +1,6 @@
 package memento;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TicTacToe {
@@ -10,12 +11,15 @@ public class TicTacToe {
     }
 
     public Memento save() {
-        return new Memento(board);
+        char[][] state = new char[board.length][board.length];
+        for (int i = 0; i < board.length; i++)
+            state[i] = Arrays.copyOf(board[i], board[i].length);
+
+        return new Memento(state);
     }
 
     public void restore(Memento memento) {
         setGameState(memento.getGameState());
-        printBoard();
     }
 
     public void printBoard() {
@@ -29,7 +33,6 @@ public class TicTacToe {
 
     public void turn(char symbol, int x, int y) {
         board[x - 1][y - 1] = symbol;
-        printBoard();
     }
 
     public boolean checkWinner(char c) {
@@ -60,12 +63,14 @@ public class TicTacToe {
             c = count % 2 == 0 ? 'x' : 'o';
             turn(c, x, y);
             count++;
+            printBoard();
 
             System.out.println("undo turn? (y/n) ");
             String answer = scanner.next();
             if (answer.toLowerCase().trim().equals("y")) {
                 count--;
                 restore(GameStates.getGameState());
+                printBoard();
             }
         }
         System.out.println("You won");
