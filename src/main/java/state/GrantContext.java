@@ -1,6 +1,6 @@
 package state;
 
-public class GrantContext implements GrantState {
+public class GrantContext {
     private GrantState currentState;
 
     public GrantState getCurrentState() {
@@ -11,7 +11,10 @@ public class GrantContext implements GrantState {
         this.currentState = currentState;
     }
 
-    @Override
+    public void next() {
+        currentState = currentState.next();
+    }
+
     public void show() {
         currentState.show();
     }
