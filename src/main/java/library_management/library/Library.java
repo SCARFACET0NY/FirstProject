@@ -1,4 +1,11 @@
-package library_management;
+package library_management.library;
+
+import library_management.book.BookItem;
+import library_management.book.BookStatus;
+import library_management.interfaces.Person;
+import library_management.interfaces.Search;
+import library_management.reader.LibraryCard;
+import library_management.reader.Reader;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,6 +20,11 @@ public class Library {
     public class Librarian implements Person, Search {
         private String firstName;
         private String lastName;
+
+        public Librarian(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
 
         public String getFirstName() {
             return firstName;
@@ -113,7 +125,7 @@ public class Library {
             bookLending.setActive(false);
         }
 
-        public void booksCheckoutInPeriod(LocalDate from, LocalDate to) {
+        public void booksCheckedOutInPeriod(LocalDate from, LocalDate to) {
             System.out.println("Books checked out from " + from + " to " + to + ": ");
             int count = 0;
 

@@ -1,4 +1,6 @@
-package library_management;
+package library_management.book;
+
+import library_management.book.Author;
 
 import java.util.List;
 

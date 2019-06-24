@@ -1,4 +1,7 @@
-package library_management;
+package library_management.reader;
+
+import library_management.interfaces.Person;
+import library_management.book.BookItem;
 
 import java.util.HashMap;
 

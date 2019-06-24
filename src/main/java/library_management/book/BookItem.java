@@ -1,9 +1,11 @@
-package library_management;
+package library_management.book;
+
+import library_management.interfaces.Item;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class BookItem extends Book {
+public class BookItem extends Book implements Item {
     private int barCode;
     private LocalDate borrowed;
     private LocalDate dueDate;
@@ -52,5 +54,10 @@ public class BookItem extends Book {
 
     public void setStatus(BookStatus status) {
         this.status = status;
+    }
+
+    public BookItem clone() {
+        return new BookItem(barCode, getTitle(), getISBN(), getYearOfPublication(), getPlaceOfPublication(),
+                getPublishingHouse(), getAuthors(), getText());
     }
 }

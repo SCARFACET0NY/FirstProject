@@ -1,4 +1,6 @@
-package library_management;
+package library_management.book;
+
+import library_management.interfaces.Person;
 
 public class Author implements Person {
     private String firstName;

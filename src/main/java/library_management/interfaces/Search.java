@@ -1,4 +1,4 @@
-package library_management;
+package library_management.interfaces;
 
 public interface Search {
     boolean searchBookByTitle(String title);

@@ -1,4 +1,8 @@
-package library_management;
+package library_management.library;
+
+import library_management.book.BookItem;
+import library_management.factory.BookItemFactory;
+import library_management.interfaces.Search;
 
 import java.util.HashMap;
 import java.util.Stack;
@@ -23,6 +27,10 @@ public class Catalog implements Search {
     }
 
     public void addBook(BookItem book) {
+        if (!BookItemFactory.getBookPrototypes().containsKey(book.getTitle())) {
+            BookItemFactory.addBookItemToPrototypes(book);
+        }
+
         Stack<BookItem> books = new Stack<>();
         books.push(book);
 
@@ -39,7 +47,7 @@ public class Catalog implements Search {
 
     public void addBookItems(String title, int count) {
         for (int i = 0; i < count; i++) {
-            BookItem book = booksByTitle.get(title).peek();
+            BookItem book = BookItemFactory.getBookItem(title);
             book.setBarCode(booksCount.get(title) + i);
 
             booksByTitle.get(title).push(book);
@@ -67,6 +75,6 @@ public class Catalog implements Search {
     }
 
     public boolean searchBookByISBN(String ISBN) {
-        return searchBookByTitle(ISBN);
+        return searchBookByTitle(booksByISBN.get(ISBN));
     }
 }
